@@ -27,19 +27,19 @@ FOUNDATION_EXPORT const unsigned char ConsoliAdsSDKVersionString[];
 #import <ConsoliAdsSDK/ConsoliAdsBannerTypes.h>
 #import <ConsoliAdsSDK/ConsoliAdIOSPlugin.h>
 #import <ConsoliAdsSDK/ConsoliAdsImmersiveAdSizes.h>
+#import <ConsoliAdsSDK/ImmersiveAdBase.h>
+#import <ConsoliAdsSDK/ImmersiveAdRequestDelegate.h>
+#import <ConsoliAdsSDK/ImmersiveAdDelegate.h>
 
 //#import <Con]soliAdsSDK/ImmersiveAd.h>
 //#import <ConsoliAdsSDK/CAInAppDelegate.h>
-//#import <ConsoliAdsSDK/ImmersiveAdBase.h>
 //#import <ConsoliAdsSDK/ImmersiveAdCampaign.h>
-//#import <ConsoliAdsSDK/ImmersiveAdRequestDelegate.h>
 //#import <ConsoliAdsSDK/BaseCampaign.h>
 //#import <ConsoliAdsSDK/IconAd.h>
 //#import <ConsoliAdsSDK/IconAdCampaign.h>
 //#import <ConsoliAdsSDK/CAAdChoicesView.h>
 //#import <ConsoliAdsSDK/CANativeAdMediaView.h>
 //#import <ConsoliAdsSDK/CAUNativeAdDelegate.h>
-//#import <ConsoliAdsSDK/ImmersiveAdDelegate.h>
 
 //#import <ConsoliAdsSDK/ImmersiveAd.h>
 //#import <ConsoliAdsSDK/ImmersiveAd.h>

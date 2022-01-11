@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<IconAdDelegate> iconAdDelegate;
 
+- (void)loadIconAd;
+
 - (UIImage*)getMainImage;
 
 - (UIImage*)getMainImageForRefresh;
