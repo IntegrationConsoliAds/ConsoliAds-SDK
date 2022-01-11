@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-SDK'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'ConsoliAds-SDK is used to get ConsoliAds integrated.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'ConsoliAds-SDK is used to get ConsoliAds integrated.'
+  'ConsoliAds-SDK is used to get ConsoliAds integrated. Test Build.'
                        DESC
 
   s.homepage         = 'https://github.com/IntegrationConsoliAds/ConsoliAds-SDK'
