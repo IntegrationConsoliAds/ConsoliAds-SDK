@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-SDK'
-  s.version          = '0.0.5'
-  s.summary          = 'ConsoliAds-SDK is used to get ConsoliAds integrated.'
+  s.version          = '12.3.0'
+  s.summary          = 'ConsoliAds-SDK is integrated in order to get Ads of ConsoliAds.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'ConsoliAds-SDK is used to get ConsoliAds integrated. Test Build.'
-                       DESC
-
+  'ConsoliAds-SDK is integrated in order to get Ads of ConsoliAds.'
+  DESC
   s.homepage         = 'https://github.com/IntegrationConsoliAds/ConsoliAds-SDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'IntegrationConsoliAds' => 'integration@consoliads.com' }
   s.source           = { :git => 'https://github.com/IntegrationConsoliAds/ConsoliAds-SDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-#  s.source_files = 'ConsoliAds-SDK/Classes/**/*'
 s.vendored_frameworks = 'ConsoliAds-SDK/ConsoliAdsSDK.framework'
 s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
 
@@ -39,12 +35,4 @@ s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.static_framework = true
 
 s.resource = 'ConsoliAds-SDK/Assets/ConsoliAdsResources.bundle'
-
-#s.resource_bundles = {
-#     'ConsoliAds-SDK' => ['ConsoliAds-SDK/Assets/ConsoliAdsResources.bundle']
-#   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
