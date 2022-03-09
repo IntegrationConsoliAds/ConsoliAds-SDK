@@ -48,14 +48,4 @@
 
 @end
 
-@interface NativeAdView : UIView
 
-@property (nonatomic, strong, nonnull) NativeAdBase* nativeAd;
-@property (nonatomic, strong, nonnull) IBOutlet CANativeAdMediaView *nativeAdMediaView;
-@property (nonatomic, strong, nonnull) IBOutlet UIButton *callToAction;
-@property (nonatomic, strong, nonnull) IBOutlet UILabel *nativeAdTitle;
-@property (nonatomic, strong, nonnull) IBOutlet UILabel *nativeAdSubtitle;
-@property (nonatomic, strong, nonnull) IBOutlet UILabel *nativeAdDescription;
-@property (nonatomic, strong, nonnull) IBOutlet CAAdChoicesView *adChoices;
-
-@end

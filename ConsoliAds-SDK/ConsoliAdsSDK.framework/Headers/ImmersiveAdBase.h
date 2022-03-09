@@ -37,6 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) isCampaignImage;
 
+- (BOOL)isImmersiveAdMuted;
+
 @end
 
 NS_ASSUME_NONNULL_END

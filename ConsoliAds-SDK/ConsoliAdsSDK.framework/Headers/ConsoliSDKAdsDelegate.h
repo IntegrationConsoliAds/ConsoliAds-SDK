@@ -10,6 +10,7 @@
 #import "CAInAppDetails.h"
 #import "CAInAppError.h"
 #import "NativeAdBase.h"
+#import "SDKConstants.h"
 
 @protocol ConsoliSDKAdsDelegate <NSObject>
 
@@ -60,7 +61,7 @@
 
 //for use as delegates on user end
 - (void)onAdLoaded:(NativeAdBase*)nativeAd;
-- (void)onAdFailedToLoad:(NSString*)sceneId error:(NSString*)error;
+- (void)onAdFailedToLoad:(NSString *)sceneId error:(NSString*)error;
 - (void)onAdClicked:(NSString*)ProductId;
 - (void)onLoggingImpression;
 - (void)onAdClosed;

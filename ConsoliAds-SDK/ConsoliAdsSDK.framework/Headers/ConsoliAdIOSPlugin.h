@@ -8,23 +8,25 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ConsoliAdsSDK/CAIconAdView.h>
+#import "CAIconAdView.h"
 #import <ConsoliAdsSDK/ConsoliSDKAdsDelegate.h>
 #import <ConsoliAdsSDK/ConsoliAdsIconAdSizes.h>
-#import <ConsoliAdsSDK/IconAdDelegate.h>
+#import "CASDKIconAdDelegate.h"
 #import <ConsoliAdsSDK/ConsoliAdsBannerTypes.h>
-#import <ConsoliAdsSDK/BannerAdDelegate.h>
+#import <ConsoliAdsSDK/CASDKBannerAdDelegate.h>
 #import <ConsoliAdsSDK/ConsoliAdsImmersiveAdSizes.h>
+#import "CASDKBannerAdController.h"
+//#import <ConsoliAdsSDK/BannerAdView.h>
 
 @interface ConsoliAdIOSPlugin : NSObject
 
 + (instancetype)sharedPlugIn;
 
-- (BOOL)initWithKey:(NSString*)appKey andDelegate:(id<ConsoliSDKAdsDelegate>)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode;
+- (BOOL)initWithKey:(NSString*)userSignature andDelegate:(id<ConsoliSDKAdsDelegate>)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode;
 
 - (BOOL)showInterstitial:(NSString*)scene withRootViewController:(UIViewController *)viewController;
 
-- (void)showIconAd:(NSString*)scene iconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<IconAdDelegate>)delegate;
+- (void)showIconAd:(NSString*)scene iconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<CASDKIconAdDelegate>)delegate;
 
 - (void)loadInterstitialForScene:(NSString*)scene;
 
@@ -46,7 +48,7 @@
 
 - (void)showNative:(NSString*)scene delegate:(id<CASDKNativeAdDelegate>)delegate;
 
-- (BOOL)showBanner:(NSString*)scene withUIView:(UIView *)view withAdSize:(CABannerAdSize)adSize withAdPosition:(CAAdPosition)adPosition andDelegate:(id<BannerAdDelegate>)bannerDelegate;
+- (BOOL)showBanner:(NSString*)scene adSize:(ConsoliadsSdkBannerSize)adSize controller:(CASDKBannerAdController*)bannerAdController delegate:(id<CASDKBannerAdDelegate>)bannerDelegate viewController:(UIViewController *)viewController;
 
 - (void)hideBannerFromView:(UIView *)view;
 
@@ -57,8 +59,13 @@
 
 + (NSDictionary*)getInAppVersion;
 
-- (void)loadIconAd:(NSString*)scene delegate:(id<IconAdDelegate>)adelegate;
+- (void)loadIconAd:(NSString*)scene delegate:(id<CASDKIconAdDelegate>)adelegate;
 
 - (void)loadImmersiveForUnityPlatform:(NSString *)scene size:(CAImmersiveAdSize)size delegate:(id)delegate;
++(BOOL)getMediationEnabled;
++(void)setMediationEnabled;
 
+-(NSString*)getConsoliAdsUnityVersionId;
+-(void)setConsoliAdsUnityVersionId:(NSString*)consoliadsUnityVersionId;
+-(void)setUnityVersionData:packagename appVersionname:(NSString*)appVersionname appVersioncode:(NSString*)appVersioncode;
 @end

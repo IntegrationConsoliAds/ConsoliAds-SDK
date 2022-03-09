@@ -13,7 +13,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 
-typedef NS_ENUM(NSUInteger , CABannerAdSize){
+typedef NS_ENUM(NSUInteger , ConsoliadsSdkBannerSize){
     KCAAdSizeBanner = 0,    /// Banner size  Typically 320x50.
     KCAAdSizeLargeBanner = 1,   /// LargeBanner size  Typically 320x100.
     KCAAdSizeFullBanner = 2,    /// FullBanner size  Typically 468x60.

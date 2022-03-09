@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IconAdDelegate.h"
+#import "CASDKIconAdDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IconAdBase : NSObject
 
-@property (nonatomic, weak) id<IconAdDelegate> iconAdDelegate;
+@property (nonatomic, weak) id<CASDKIconAdDelegate> iconAdDelegate;
 
 - (void)loadIconAd;
 
