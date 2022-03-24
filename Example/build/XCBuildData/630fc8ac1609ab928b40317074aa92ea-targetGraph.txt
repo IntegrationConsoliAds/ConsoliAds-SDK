@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+ConsoliAds-SDK in Pods
+FBSnapshotTestCase in Pods
+Pods-ConsoliAds-SDK_Example in Pods, depends on:
+ConsoliAds-SDK in Pods (explicit)
+Pods-ConsoliAds-SDK_Tests in Pods, depends on:
+FBSnapshotTestCase in Pods (explicit)
+Pods-ConsoliAds-SDK_Example in Pods (explicit)

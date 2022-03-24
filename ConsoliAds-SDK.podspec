@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-SDK'
-  s.version          = '13.0.0-QA-1'
+  s.version          = '13.1.0-Live-1.0'
   s.summary          = 'ConsoliAds-SDK is integrated in order to get Ads of ConsoliAds.'
 
 # This description is used to generate tags and improve search results.
