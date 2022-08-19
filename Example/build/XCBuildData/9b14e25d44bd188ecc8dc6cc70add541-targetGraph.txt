@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+ConsoliAds-SDK in Pods, no dependencies
+Pods-ConsoliAds-SDK_Example in Pods, depends on:
+ConsoliAds-SDK in Pods (explicit)

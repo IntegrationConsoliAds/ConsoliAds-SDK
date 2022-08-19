@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-SDK'
-  s.version          = '13.1.0-1.0'
+  s.version          = '13.0.0'
   s.summary          = 'ConsoliAds-SDK is integrated in order to get Ads of ConsoliAds.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
 s.vendored_frameworks = 'ConsoliAds-SDK/ConsoliAdsSDK.framework'
 s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
 
-s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES'}
+s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES'}
 s.static_framework = true
 
 s.resource = 'ConsoliAds-SDK/Assets/ConsoliAdsResources.bundle'
