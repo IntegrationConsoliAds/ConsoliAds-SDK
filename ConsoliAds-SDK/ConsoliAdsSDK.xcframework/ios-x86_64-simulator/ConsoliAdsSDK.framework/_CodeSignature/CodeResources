@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/CASdk.h</key>
 		<data>
-		z1tEZYYAtFeuII9T+6YRYBCOnoM=
+		zDbK3h2PE3MgGxZULIMH77t9NNM=
 		</data>
 		<key>Headers/CAUNativeAdDelegate.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/ConsoliAdIOSPlugin.h</key>
 		<data>
-		k7TUzEVNTe6ZC5FrWWNktffiAUA=
+		ENr4PZ3eZiDUCoo77BmJW9zerM4=
 		</data>
 		<key>Headers/ConsoliAdsBannerTypes.h</key>
 		<data>
-		xS7AFlFrs1AXyqe5c7jTFMFd/5Q=
+		vrMvtVTlAw4YbFej/ByRHD1mQP4=
 		</data>
 		<key>Headers/ConsoliAdsIconAdSizes.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/ImmersiveAdBase.h</key>
 		<data>
-		9mzf5Fk2MMWhINKRisih3Xu6KvE=
+		Ipm/qGkwBCyr3K3t9S+1f3rKCjA=
 		</data>
 		<key>Headers/ImmersiveAdDelegate.h</key>
 		<data>
@@ -234,11 +234,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z1tEZYYAtFeuII9T+6YRYBCOnoM=
+			zDbK3h2PE3MgGxZULIMH77t9NNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			32b6dL3BLFmDNOrC64fnY8/d1ZUytKVlo68SG2eN0Os=
+			D+f8PCMRfdXcZr2GVAA2Z3DK1TCkqMgmqR4uPVZkSpQ=
 			</data>
 		</dict>
 		<key>Headers/CAUNativeAdDelegate.h</key>
@@ -256,22 +256,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k7TUzEVNTe6ZC5FrWWNktffiAUA=
+			ENr4PZ3eZiDUCoo77BmJW9zerM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			n0ek5xCKJOK8AEnFDMqlJKakoByVB/PI0FgcSyMYiA4=
+			z0q7ug/s7MpWv5/zH8cvsAkYazOnPWozTc4WbM1GZmM=
 			</data>
 		</dict>
 		<key>Headers/ConsoliAdsBannerTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xS7AFlFrs1AXyqe5c7jTFMFd/5Q=
+			vrMvtVTlAw4YbFej/ByRHD1mQP4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cHJXTqTNoN5mULg3g+WXj3B8zRPZGuqhsE3F/2voqI8=
+			pTUnc3Q4G9/bu4KZGR6EBy0Zu+5/Nt7HAbMvXtuylB4=
 			</data>
 		</dict>
 		<key>Headers/ConsoliAdsIconAdSizes.h</key>
@@ -388,11 +388,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9mzf5Fk2MMWhINKRisih3Xu6KvE=
+			Ipm/qGkwBCyr3K3t9S+1f3rKCjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			l2sLgzGq4fWXc1ADHfb8msljWWZENMd0rFaE2ozO5R0=
+			zo/zgEcNQE+9C4TomhunZ87JHKkIYOr30+EwL3bJD+A=
 			</data>
 		</dict>
 		<key>Headers/ImmersiveAdDelegate.h</key>

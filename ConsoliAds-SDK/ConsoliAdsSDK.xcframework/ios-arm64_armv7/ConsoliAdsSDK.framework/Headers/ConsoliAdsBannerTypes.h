@@ -12,13 +12,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-
 typedef NS_ENUM(NSUInteger , ConsoliadsSdkBannerSize){
-    KCAAdSizeBanner = 0,    /// Banner size  Typically 320x50.
-    KCAAdSizeLargeBanner = 1,   /// LargeBanner size  Typically 320x100.
-    KCAAdSizeFullBanner = 2,    /// FullBanner size  Typically 468x60.
-    KCAAdSizeLeaderboardBanner = 3, /// Leaderboard size  Typically 728x90.
-    KCAAdSizeSmartBanner = 4    /// SmartBanner size  Typically 728x90.
+    KCAAdSizeBanner = 1,    /// Banner size  Typically 320x50.
+    KCAAdSizeLargeBanner = 6,   /// LargeBanner size  Typically 320x100.
+    KCAAdSizeIABBanner = 3,    /// FullBanner size  Typically 468x60.
+    KCAAdSizeLeaderboardBanner = 4, /// Leaderboard size  Typically 728x90.
+    KCAAdSizeSmartBanner = 5    /// SmartBanner size  Typically 728x90.
 };
 
 typedef NS_ENUM(NSUInteger , CAAdPosition){
@@ -30,7 +29,6 @@ typedef NS_ENUM(NSUInteger , CAAdPosition){
     KCAAdPositionBottomRight = 5,
     KCAAdPositionCenter = 6,
     KCAAdPositionCustom = 7
-
 };
 
 

@@ -28,28 +28,32 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CASdk : NSObject
 
 + (instancetype)sharedPlugIn;
-- (BOOL)initWithAppKey:(NSString*)userSignature andDelegate:(id<ConsoliadsSdkInitializationDelegate>)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode viewController:(UIViewController*)viewController;
+- (BOOL)initWithAppKey:(NSString*)userSignature andDelegate:(id<ConsoliadsSdkInitializationDelegate>)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode viewController:(UIViewController* _Nullable)viewController;
 - (BOOL)showInterstitial:(SdkPlaceholderName)scene withRootViewController:(UIViewController *)viewController;
-- (BOOL)isInterstitialLoaded:(SdkPlaceholderName)scene;
+- (BOOL)showInterstitialWithRootViewController:(UIViewController *)viewController;
+- (BOOL)isInterstitialAvailable:(SdkPlaceholderName)scene;
+- (BOOL)isInterstitialAvailable;
 - (void)loadInterstitialForScene:(SdkPlaceholderName)scene;
-- (BOOL)isStaticInterstitialAvailable:(SdkPlaceholderName)scene;
-- (void)loadStaticInterstitialForScene:(SdkPlaceholderName)scene;
-- (BOOL)showStaticInterstitial:(SdkPlaceholderName)scene withRootViewController:(UIViewController *)viewController;
+- (void)loadInterstitialForScene;
 - (BOOL)showBanner:(SdkPlaceholderName)scene adSize:(ConsoliadsSdkBannerSize)adSize controller:(CASDKBannerAdController*)bannerAdController delegate:(id<CASDKBannerAdDelegate>)bannerDelegate viewController:(UIViewController *)viewController;
 - (BOOL)isRewardedVideoAvailable:(SdkPlaceholderName)scene;
+- (BOOL)isRewardedVideoAvailable;
 - (void)loadRewardedVideoAdForScene:(SdkPlaceholderName)scene;
+- (void)loadRewardedVideoAdForScene;
 - (BOOL)showRewardedVideoAdForScene:(SdkPlaceholderName)scene withRootViewController:(UIViewController*)viewController;
+- (BOOL)showRewardedVideoAdWithRootViewController:(UIViewController*)viewController;
 - (void)showNative:(SdkPlaceholderName)scene delegate:(id<CASDKNativeAdDelegate>)delegate;
+- (void)showNativeWithDelegate:(id<CASDKNativeAdDelegate>)delegate;
 - (void)showIconAd:(SdkPlaceholderName)scene iconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<CASDKIconAdDelegate>)delegate;
--(void)setSdkInitializationDelegate:(id<ConsoliadsSdkInitializationDelegate>)sdkInitializationListener;
--(void)setSdkInterstitialAdDelegate:(id<ConsoliadsSdkInterstitialAdDelegate>)sdkInterstitialAdListener;
--(void)setSdkStaticInterstitialAdDelegate:(id<ConsoliadsSdkStaticInterstitialAdDelegate>)sdkStaticInterstitialAdListener;
--(void)setSdkRewardedAdDelegate:(id<ConsoliadsSdkRewardedAdDelegate>)sdkRewardedAdListener;
--(void)setSdkInAppDelegate:(id<ConsoliadsSdkInAppPurchaseDelegate>)sdkInAppDelegate;
--(BOOL)isInitSuccess;
-+(NSDictionary*)getInAppVersion;
-+(void)setMediationEnabled;
-+(BOOL)getMediationEnabled;
+- (void)showIconAdWithIconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<CASDKIconAdDelegate>)delegate;
+- (void)setSdkInitializationDelegate:(id<ConsoliadsSdkInitializationDelegate>)sdkInitializationListener;
+- (void)setSdkInterstitialAdDelegate:(id<ConsoliadsSdkInterstitialAdDelegate>)sdkInterstitialAdListener;
+- (void)setSdkRewardedAdDelegate:(id<ConsoliadsSdkRewardedAdDelegate>)sdkRewardedAdListener;
+- (void)setSdkInAppDelegate:(id<ConsoliadsSdkInAppPurchaseDelegate>)sdkInAppDelegate;
+- (BOOL)isInitSuccess;
++ (NSDictionary*)getInAppVersion;
++ (void)setMediationEnabled;
++ (BOOL)getMediationEnabled;
 
 typedef NS_ENUM(NSUInteger , ConsoliadsSdkInitStatus){
     Idle = 0,

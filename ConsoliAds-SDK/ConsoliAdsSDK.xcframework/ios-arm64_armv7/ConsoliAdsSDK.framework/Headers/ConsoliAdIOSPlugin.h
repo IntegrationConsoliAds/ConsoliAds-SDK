@@ -62,10 +62,13 @@
 - (void)loadIconAd:(NSString*)scene delegate:(id<CASDKIconAdDelegate>)adelegate;
 
 - (void)loadImmersiveForUnityPlatform:(NSString *)scene size:(CAImmersiveAdSize)size delegate:(id)delegate;
-+(BOOL)getMediationEnabled;
-+(void)setMediationEnabled;
++ (BOOL)getMediationEnabled;
++ (void)setMediationEnabled;
 
--(NSString*)getConsoliAdsUnityVersionId;
--(void)setConsoliAdsUnityVersionId:(NSString*)consoliadsUnityVersionId;
--(void)setUnityVersionData:packagename appVersionname:(NSString*)appVersionname appVersioncode:(NSString*)appVersioncode;
+- (NSString*)getConsoliAdsUnityVersionId;
+- (void)setConsoliAdsUnityVersionId:(NSString*)consoliadsUnityVersionId;
+- (void)setUnityVersionData:packagename appVersionname:(NSString*)appVersionname appVersioncode:(NSString*)appVersioncode;
+- (ConsoliadsSdkBannerSize)getBannerSizeForScene:(ConsoliadsSdkBannerSize)bannerSize placeholder:(NSString*)placeholder;
+- (CAAdPosition)getBannerPosition:(CAAdPosition)adPosition placeholder:(NSString*)placeholder;
+
 @end
