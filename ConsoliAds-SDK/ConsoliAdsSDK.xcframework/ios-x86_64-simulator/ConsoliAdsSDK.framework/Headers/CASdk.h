@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CASdk : NSObject
 
 + (instancetype)sharedPlugIn;
-- (BOOL)initWithAppKey:(NSString*)userSignature andDelegate:(id<ConsoliadsSdkInitializationDelegate>)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode viewController:(UIViewController* _Nullable)viewController;
+- (BOOL)initWithUserSignature:(NSString*)userSignature andDelegate:(id<ConsoliadsSdkInitializationDelegate> _Nullable)adelegate userConsent:(BOOL)consent devMode:(BOOL)isDevMode viewController:(UIViewController* _Nullable)viewController;
 - (BOOL)showInterstitial:(SdkPlaceholderName)scene withRootViewController:(UIViewController *)viewController;
 - (BOOL)showInterstitialWithRootViewController:(UIViewController *)viewController;
 - (BOOL)isInterstitialAvailable:(SdkPlaceholderName)scene;
@@ -46,14 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showNativeWithDelegate:(id<CASDKNativeAdDelegate>)delegate;
 - (void)showIconAd:(SdkPlaceholderName)scene iconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<CASDKIconAdDelegate>)delegate;
 - (void)showIconAdWithIconAdView:(CAIconAdView*)iconAdView withAdSize:(CAIconAdSize)adSize delegate:(id<CASDKIconAdDelegate>)delegate;
-- (void)setSdkInitializationDelegate:(id<ConsoliadsSdkInitializationDelegate>)sdkInitializationListener;
 - (void)setSdkInterstitialAdDelegate:(id<ConsoliadsSdkInterstitialAdDelegate>)sdkInterstitialAdListener;
 - (void)setSdkRewardedAdDelegate:(id<ConsoliadsSdkRewardedAdDelegate>)sdkRewardedAdListener;
 - (void)setSdkInAppDelegate:(id<ConsoliadsSdkInAppPurchaseDelegate>)sdkInAppDelegate;
 - (BOOL)isInitSuccess;
 + (NSDictionary*)getInAppVersion;
-+ (void)setMediationEnabled;
-+ (BOOL)getMediationEnabled;
 
 typedef NS_ENUM(NSUInteger , ConsoliadsSdkInitStatus){
     Idle = 0,

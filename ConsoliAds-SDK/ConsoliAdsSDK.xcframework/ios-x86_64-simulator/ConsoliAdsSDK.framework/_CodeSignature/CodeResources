@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/CASdk.h</key>
 		<data>
-		zDbK3h2PE3MgGxZULIMH77t9NNM=
+		+ysW2+CDTCxepdRL0R1nunyHTDA=
 		</data>
 		<key>Headers/CAUNativeAdDelegate.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/ConsoliAdIOSPlugin.h</key>
 		<data>
-		ENr4PZ3eZiDUCoo77BmJW9zerM4=
+		Z8CM4OM57tZn0Hsq44DCZiXnQEg=
 		</data>
 		<key>Headers/ConsoliAdsBannerTypes.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3n+4TXO1exvRyyJHWwT01BP35Lk=
+		Qfx3moSWjLCLggejNFoQtKn3Vrg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -234,11 +234,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zDbK3h2PE3MgGxZULIMH77t9NNM=
+			+ysW2+CDTCxepdRL0R1nunyHTDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			D+f8PCMRfdXcZr2GVAA2Z3DK1TCkqMgmqR4uPVZkSpQ=
+			VABM8jnUGs/bSS1IXG5ByWyzvzgDqV43I3PUuAYOF6c=
 			</data>
 		</dict>
 		<key>Headers/CAUNativeAdDelegate.h</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ENr4PZ3eZiDUCoo77BmJW9zerM4=
+			Z8CM4OM57tZn0Hsq44DCZiXnQEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			z0q7ug/s7MpWv5/zH8cvsAkYazOnPWozTc4WbM1GZmM=
+			Xcb7yaBIU1CxTs4G9hQt8MLtZb9ZMQyio4YBa12P2j4=
 			</data>
 		</dict>
 		<key>Headers/ConsoliAdsBannerTypes.h</key>

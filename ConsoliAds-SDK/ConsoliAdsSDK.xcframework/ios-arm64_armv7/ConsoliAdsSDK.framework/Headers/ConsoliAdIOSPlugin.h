@@ -62,8 +62,6 @@
 - (void)loadIconAd:(NSString*)scene delegate:(id<CASDKIconAdDelegate>)adelegate;
 
 - (void)loadImmersiveForUnityPlatform:(NSString *)scene size:(CAImmersiveAdSize)size delegate:(id)delegate;
-+ (BOOL)getMediationEnabled;
-+ (void)setMediationEnabled;
 
 - (NSString*)getConsoliAdsUnityVersionId;
 - (void)setConsoliAdsUnityVersionId:(NSString*)consoliadsUnityVersionId;
